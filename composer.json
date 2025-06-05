@@ -23,7 +23,7 @@
         },
         "sort-packages": true,
         "platform": {
-            "php": "8.0.99"
+            "php": "8.1.99"
         }
     },
     "extra": {
@@ -32,9 +32,9 @@
         }
     },
     "require": {
-        "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
-        "laminas-api-tools/api-tools-api-problem": "^1.6",
-        "laminas-api-tools/api-tools-content-negotiation": "^1.8",
+        "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
+        "laminas-api-tools/api-tools-api-problem": "^1.7",
+        "laminas-api-tools/api-tools-content-negotiation": "^1.9",
         "laminas/laminas-eventmanager": "^3.3",
         "laminas/laminas-http": "^2.14",
         "laminas/laminas-mvc": "^3.2",
@@ -71,5 +71,19 @@
     },
     "conflict": {
         "zfcampus/zf-rpc": "*"
-    }
+    },
+    "provide": {
+        "laminas-api-tools/api-tools-api-problem": "1.7.x-dev",
+        "laminas-api-tools/api-tools-content-negotiation": "1.9.x-dev"
+    },
+    "repositories": [
+        {
+          "type": "git",
+          "url": "https://github.com/viovendi/api-tools-api-problem"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/viovendi/api-tools-content-negotiation"
+        }
+    ]
 }
